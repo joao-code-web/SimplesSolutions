@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ysabeau", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color--1: #134074;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
+}
+
+.cont {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color--1);
+  z-index: 988;
+}
+
+.list-mobile {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 15px;
+  display: none;
+}
+
+.list-mobile i {
+  position: relative;
+  text-align: center;
+  top: -2px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.logo {
+  width: 100px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+
+.logo a {
+  color: white;
+}
+
+.list-materias {
+  width: 100%;
+  transition: 1s;
+}
+
+nav.desktop {
+  width: 100%;
+  background-color: var(--color--1);
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  border-radius: 0px 0px 50px 50px;
+}
+
+nav.desktop ul {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5em;
+}
+
+nav.desktop ul li {
+  padding: 0.9em;
+  transition: 0.5s;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+}
+
+nav.desktop ul li a {
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+}
+
+nav.desktop ul li a:hover {
+  color: var(--color--4);
+}
+
+.membros-wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4em auto;
+}
+
+.membros-tittles-fun {
+  width: 100%;
+  padding-left: 2em;
+}
+
+.membros-division {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.membros-people {
+  width: 30%;
+  margin: 1.5em auto;
+  background-color: var(--color--4);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
+  border-radius: 30px;
+}
+
+.membros-people .membros-photo {
+  width: 100%;
+  padding: 2em;
+}
+
+.membros-people .membros-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.membros-people .socias-photo {
+  width: 100%;
+  background-color: var(--color--4);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  border-top: 1px solid black;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.membros-people .socias-photo a i {
+  color: black;
+  font-size: 25px;
+}
+
+.membros-people .socias-photo i {
+  padding: 0.3em;
+}
+
+.membros-people .socias-photo h1.name {
+  width: 50%;
+  padding-left: 0.5em;
+}
+
+.membros-people .socias-photo .icons-socias {
+  width: 50%;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--color--1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.logo-footer {
+  width: 30%;
+  padding: 1em;
+  text-align: center;
+}
+
+.logo-img-footer {
+  width: 100%;
+}
+
+.icons-materias-footer {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-materias-footer svg {
+  width: 5em;
+  height: 5em;
+  margin: 10px;
+}
+
+.icons-materias-footer svg:hover {
+  background-color: var(--color--3);
+}
+
+.footer-singleExe {
+  width: 35%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.footer-singleExe h1 {
+  padding-left: 20px;
+}
+
+.footer-singleExe nav {
+  display: flex;
+  padding-left: 20px;
+}
+
+.footer-singleExe ul.math-footer {
+  width: 50%;
+  padding-top: 20px;
+}
+
+.footer-singleExe ul.portu-footer {
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.footer-singleExe ul li {
+  padding: 0.4em 0px;
+}
+
+.footer-singleExe ul li a {
+  color: white;
+  font-size: 1.4em;
+}
+.footer-singleExe ul li a:hover {
+  border-bottom: 1px solid black;
+}
+
+.footer-maps {
+  width: 30%;
+  padding: 10px;
+}
+
+.footer-maps h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.footer-maps .mapa iframe {
+  width: 100%;
+}
+
+.footer-social {
+  margin-top: 10px;
+  border-top: 5px solid black;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+.footer-social i {
+  text-align: center;
+  padding-top: 0.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+/* footer */
+
+@media screen and (max-width: 800px) {
+  .list-mobile {
+    top: 50px;
+    left: 50px;
+    display: block;
+  }
+
+  nav.desktop {
+    opacity: 0;
+    display: none;
+  }
+
+  .logo img {
+    top: 0px;
+    margin: 0px;
+  }
+
+  /* header */
+
+  .membros-tittles-fun {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .membros-people {
+    width: 45%;
+  }
+
+  .membros-people .membros-photo {
+    padding: 1em;
+  }
+  /* main */
+
+  .logo-footer {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 1em;
+  }
+
+  .footer-singleExe {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .footer-singleExe h1 {
+    padding: 0px;
+  }
+
+  .footer-singleExe ul {
+    text-align: center;
+  }
+
+  .footer-singleExe nav {
+    padding: 0px;
+  }
+
+  .footer-maps {
+    width: 95%;
+    margin: auto;
+  }
+  /* footer */
+}
+
+@media screen and (max-width: 480px) {
+  .list-mobile {
+    top: 50px;
+    left: 0px;
+    display: block;
+  }
+
+  nav.desktop {
+    width: 100%;
+    background-color: var(--color--1);
+    margin: auto;
+    text-align: center;
+    border-radius: 0px 0px 50px 50px;
+  }
+
+  nav.desktop ul {
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav.desktop ul li {
+    width: 100%;
+    padding: 1em;
+    transition: 0.5s;
+    outline: none;
+    border: 0;
+    font-size: 25px;
+  }
+  /* header */
+
+  .membros-people {
+    width: 90%;
+  }
+
+  .membros-people .membros-photo {
+    padding: 2em;
+  }
+  /* main */
+}
